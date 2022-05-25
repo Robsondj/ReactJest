@@ -1,7 +1,7 @@
 import { act, fireEvent, render, screen } from "@testing-library/react";
 import React  from "react";
 import { RecoilRoot } from "recoil";
-import Form from "./Form";
+import Form from ".";
 
 // Jest
 

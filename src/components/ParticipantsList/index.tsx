@@ -1,4 +1,4 @@
-import { useListOfParticipants } from "../state/hook/useListOfParticipants";
+import { useListOfParticipants } from "../../state/hook/useListOfParticipants";
 
 const ParticipantsList = () => {
 

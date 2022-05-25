@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { useListOfParticipants } from "../state/hook/useListOfParticipants";
+import { useListOfParticipants } from "../../state/hook/useListOfParticipants";
 
-import './Footer.css';
+import './styles.css';
 
 const Footer = () => {
 
