@@ -71,6 +71,8 @@ describe("Form Group Test", () => {
     });
 
     test("the error message must disappear after a time", () => {
+        // useFakeTimers simulate the execution of any timer runned on js
+        // the setTimeout for example will not in fact be executed, just simulated 
         jest.useFakeTimers();
         render(
             <RecoilRoot>
@@ -95,6 +97,8 @@ describe("Form Group Test", () => {
         let mensagemDeErro = screen.queryByRole('alert');
         expect(mensagemDeErro).toBeInTheDocument();
     
+        // when runAllTimers is executed, the form render again
+        // then, it is necessary put inside the act function
         act(() => {
             jest.runAllTimers();
         });
