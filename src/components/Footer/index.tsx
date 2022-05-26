@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useListOfParticipants } from "../../state/hook/useListOfParticipants";
+import { useDraw } from "../../state/hook/useDraw";
 
 import './styles.css';
 
@@ -8,9 +9,12 @@ const Footer = () => {
     const participants = useListOfParticipants();
 
     const navigateTo = useNavigate();
+
+    const draw = useDraw();
     
     const start = () => {
-        navigateTo('/sorteio');
+        draw();
+        navigateTo('/draw');
     }
 
     return (<footer className="footer-config">
