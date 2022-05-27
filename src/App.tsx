@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <RecoilRoot>
         <Routes>
-          <Route path="/" element={Config}/>
+          <Route path="/" element={<Config />}/>
           <Route path="/draw" element={<Draw />} />
         </Routes>
       </RecoilRoot>

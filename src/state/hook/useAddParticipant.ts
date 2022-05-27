@@ -11,7 +11,7 @@ export const useAddParticipant = () => {
             setError("Nomes duplicados não são permitidos!");
             setTimeout(() => {
                 setError("");
-            }, 500);
+            }, 5000);
             return;
         }
         return setList(currentList => [...currentList, participantName]);
