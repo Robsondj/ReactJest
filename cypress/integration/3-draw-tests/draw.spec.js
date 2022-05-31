@@ -1,0 +1,22 @@
+describe("when new participants is added", () => {
+    beforeEach(() => {
+        cy.visit("http://localhost:3000");
+    });
+
+    it("when input is empty, new participants can not be added", () => {
+
+        cy.get("input").should("have.attr", "placeholder", "Insira os nomes dos participantes");
+
+        cy.get("button").should("have.attr", "disabled");
+    });
+
+    it("Add participant in case of fill the input", () => {
+
+        cy.addParticipant("Robson");
+
+        cy.get("input").should("be.empty");
+
+    })
+
+
+});
