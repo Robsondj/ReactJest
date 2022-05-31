@@ -1,6 +1,6 @@
 describe("when new participants is added", () => {
     beforeEach(() => {
-        cy.visit("http://localhost:3000");
+        cy.visit("/");
     });
 
     it("when input is empty, new participants can not be added", () => {
