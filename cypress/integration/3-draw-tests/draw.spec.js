@@ -1,5 +1,6 @@
 describe("when new participants is added", () => {
     beforeEach(() => {
+        // url is on the cypress.json
         cy.visit("/");
     });
 
