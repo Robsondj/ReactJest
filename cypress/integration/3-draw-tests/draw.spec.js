@@ -16,6 +16,14 @@ describe("when new participants is added", () => {
 
         cy.get("input").should("be.empty");
 
+    });
+
+    it("Add several participants", () => {
+        const participants = require("../../fixtures/participants.json");
+        participants.forEach(participant => {
+            cy.addParticipant(participant.name);
+        });
+        cy.get("ul li").should("have.length", participants.length);
     })
 
 
