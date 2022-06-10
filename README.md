@@ -36,5 +36,5 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 <br>
 
-## [See it running](https://react-jest-xi.vercel.app/draw)
+## [See it running](https://react-jest-xi.vercel.app/)
 
